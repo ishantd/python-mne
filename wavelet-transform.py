@@ -1,18 +1,7 @@
 import os
 import numpy as np
 import pywt
-data = np.ones((4,4), dtype=np.float64)
-coeffs = pywt.dwt2(data, 'haar')
-array = []
-cA, (cH, cV, cD) = coeffs
-cA
-# array([[ 2.,  2.],
-#        [ 2.,  2.]])
-cV
-# array([[ 0.,  0.],
-    #    [ 0.,  0.]])
-# print(cA)
-# print(cV)
+
 
 output_2d_list = []
 current_working_directory = os.path.abspath('.')
